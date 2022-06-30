@@ -1,0 +1,163 @@
+.heading {
+  position: absolute;
+  display: flex;
+  width: 375px;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 48px;
+  align-items: center;
+  background-color: #f7f7f9;
+}
+body {
+  background-color: grey; 
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 375px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 12px;
+    top: calc(50% -40px/2);
+}
+.menu {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  margin-right: 24px;
+  top: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: blue;
+  align-items: center;
+}
+.divider {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 1px;
+  position: absolute;
+  width: 375px;
+  height: 604px;
+  left: calc(50% -375px/2);
+  top: 92px;
+  background-color: #f7f7f9;
+}
+#first {
+  width: 327px;
+  height: 150px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172B4D;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#description {
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 2px;
+  width: 117px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #7f8cff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration-line: none;
+}
+.social-media {
+  width: 170.17px;
+  height: 20px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  list-style: none;
+}
+.twitter {
+  position: absolute;
+  left: 6.4%;
+  right: 88.27%;
+  top: 77.81%;
+  bottom: 18.88%;
+}
+.linkedin {
+  position: absolute;
+  left: 16.8%;
+  right: 81.87%;
+  top: 77.81%;
+  bottom: 18.88%;
+}
+.medium {
+  position: absolute;
+  left: 27.47%;
+  right: 67.2%;
+  top: 78.15%;
+  bottom: 19.21%;
+}
+.github {
+  position: absolute;
+  left: 38.13%;
+  right: 57.07%;
+  top: 77.81%;
+  bottom: 18.88%; 
+}
+.angelist {
+  position: absolute;
+  left: 38%;
+  right: 48.22%;
+  top: 77.81%;
+  bottom: 18.88%;  
+}
+.ellipse_11 {
+  position: absolute;
+  left: 38.5px;
+  right: 19.25px;
+  top: 16.04px;
+  bottom: 161.47px;  
+  background: #6070ff;
+  transform: rotate(-156.88deg); 
+}
