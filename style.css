@@ -414,7 +414,7 @@ button {
   line-height: 20px;
   display: flex;
   align-items: center;
-  color:#253858;
+  color: #253858;
   text-decoration: none;
   top: calc((50% - 24px / 2) - 0.36px);
 }
