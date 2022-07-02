@@ -125,7 +125,7 @@ section {
   padding-right: 24px;
   flex-direction: column;
   align-items: center;
-  padding: 5.02%;
+  /* padding: 5.02%; */
   margin-bottom: 88px;
 }
 
@@ -156,6 +156,12 @@ section {
   gap: 12px;
   width: 295px;
   height: 76px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .project-title {
@@ -207,17 +213,6 @@ section {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-}
-
-.primary-text {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
-  width: 295px;
-  height: 76px;
 }
 
 .tags {
@@ -356,7 +351,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 464.15px;
 }
@@ -365,7 +360,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 320.15px;
 }
@@ -385,7 +380,6 @@ button {
 }
 
 .languages {
-  display: flex;
   flex-direction: row;
   height: 24px;
   font-family: "Poppins", sans-serif;
@@ -395,7 +389,7 @@ button {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
   justify-content: space-between;
 }
 
@@ -421,7 +415,7 @@ button {
   align-items: center;
   color: #253858;
   text-decoration: none;
-  top: calc(50% -24px/2 -0.36px);                                                     
+  top: calc((50% - 24px / 2) - 0.36px);                                                     
 }
 
 .icon {
@@ -431,7 +425,7 @@ button {
   display: flex;
   flex-direction: row;
   margin-right: 16px;
-  top: calc(50% -48px/2 - 0.36px);
+  top: calc((50% - 48px / 2) - 0.36px);
 }
 
 .content {
