@@ -255,6 +255,26 @@ section {
   margin-bottom: 88px;
 }
 
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 5px;
+  width: 162px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #396df2;
+  background-color: white;
+}
+
 button:hover {
   background-color: #6070ff;
   color: white;
@@ -340,26 +360,6 @@ button:active {
   margin-left: -40px;
   justify-content: flex-start;
   margin-top: 10px;
-}
-
-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  margin-bottom: 5px;
-  width: 162px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  color: #396df2;
-  background-color: white;
 }
 
 .skill-list {
