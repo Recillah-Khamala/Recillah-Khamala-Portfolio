@@ -102,6 +102,7 @@ body {
 
 li {
   padding: 15px;
+  list-style: none;
 }
 
 /* middle section */
@@ -117,6 +118,7 @@ section {
 
 .works {
   margin-bottom: 88px;
+  background-color: #e5e5e5;
 }
 
 .single-card {
@@ -127,6 +129,9 @@ section {
   flex-direction: column;
   align-items: center;
   margin-bottom: 88px;
+  margin-top: 12px;
+  background-color: white;
+  border-radius: 16px;
 }
 
 .card-works {
@@ -137,7 +142,7 @@ section {
   border-radius: 8px;
   width: 295px;
   height: 220px;
-  margin-top: 88px;
+  margin-top: 12px;
 }
 
 .left-block {
@@ -155,7 +160,6 @@ section {
   padding: 0;
   gap: 12px;
   width: 295px;
-  height: 76px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -249,6 +253,16 @@ section {
   border: 1px solid #6070ff;
   border-radius: 8px;
   margin-bottom: 88px;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+button:active {
+  color: #fff;
+  background-color: #2230d2;
 }
 
 .about-myself {
@@ -378,6 +392,7 @@ button {
   align-items: center;
   width: 40px;
   height: 40px;
+  text-decoration: none;
 }
 
 .languages {
@@ -392,6 +407,7 @@ button {
   align-items: center;
   color: #000;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .language-list {
@@ -402,6 +418,7 @@ button {
   margin-bottom: 12px;
   width: 327px;
   height: 248.15px;
+  text-decoration: none;
 }
 
 .text {
@@ -427,6 +444,7 @@ button {
   flex-direction: row;
   margin-right: 16px;
   top: calc((50% - 48px / 2) - 0.36px);
+  text-decoration: none;
 }
 
 .content {
@@ -436,4 +454,6 @@ button {
   height: 66.72px;
   background: #f7f7f9;
   border-radius: 8px;
+  text-decoration: none;
+  align-items: center;
 }
