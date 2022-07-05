@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section class="head">
         <header class="heading">
             <div class="logo">
                 <a href="#">My Logo</a>
@@ -51,6 +52,8 @@
                 </li>
             </ul>
         </section> 
+    </section>
+        
         <!-- Middle section -->
         <section class="works">
             <div class="single-card">
@@ -251,6 +254,63 @@
                     </li>
                 </ul>
             </div>
-        </section>   
+        </section> 
+        <!-- contact form -->
+        <section class="contact-me">
+            <footer>
+                <h2 class="heading-2">Contact me</h2>
+                <p class="wordings">
+                  If you have an application you are interested in developing, a feature
+                  that you need built or a project that needs coding. I’d love to help
+                  with it
+                </p>
+                <form
+                  action="https://formspree.io/f/xzbowqnl"
+                  id="form1"
+                  method="post"
+                  class="contact-form"
+                >
+                  <div class="input-control">
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Your Name"
+                      name="name"
+                      maxlength="30"
+                      required
+                    />
+                  </div>
+                  <div class="input-control">
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Your Email"
+                      name="email"
+                      maxlength="30"
+                      required
+                    />
+                  </div>
+                  <div class="input-control">
+                    <textarea
+                      placeholder="Write your message here"
+                      id="message"
+                      name="message"
+                      maxlength="500"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="flex">
+                    <input
+                      id="contact-btn"
+                      class="submit"
+                      value="Get It Touch"
+                      type="submit"
+                    />
+                    <div class="error"></div>
+                  </div>
+                </form>
+                <img class="shape" src="images/Shape.png" alt="shape" />
+              </footer>
+        </section>  
 </body>
 </html>
