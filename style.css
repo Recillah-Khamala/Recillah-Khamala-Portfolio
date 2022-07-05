@@ -244,6 +244,10 @@ section {
   border-radius: 8px;
 }
 
+.float-items {
+  float: left;
+}
+
 .action {
   display: flex;
   flex-direction: row;
