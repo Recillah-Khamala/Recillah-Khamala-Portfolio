@@ -119,7 +119,6 @@ section {
   align-items: center;
   padding-left: 6.4%;
   padding-right: 6.4%;
-  margin-bottom: 88px;
 }
 
 .works {
@@ -261,9 +260,6 @@ section {
 }
 
 button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 12px;
   margin-bottom: 5px;
   width: 162px;
@@ -468,11 +464,13 @@ button:active {
 /* contact form */
 
 .contact-me {
-  padding: 0 30.27;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  /* width: 100%; */
   background-image: url(Images/header-shapes-mobile.png);
   background-repeat: no-repeat;
-  background-size: calc(100%);
   background-color: #6070ff;
   min-width: 375px;
   /* top: -29px; */
@@ -481,16 +479,12 @@ button:active {
 }
 
 .heading-2 {
-  width: calc(100%);
-  height: 56px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 40px;
-  display: flex;
-  align-items: center;
   text-align: center;
-  margin-top: 103px;
+  padding-top: 103px;
   margin-bottom: 12px;
   color: #fff;
 }
@@ -506,3 +500,23 @@ button:active {
   text-align: center;
   color: #ebebff;
 }
+.input-control input {
+  height: 48px;
+  width: 327px;
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  margin: 10px 0;
+}
+#message {
+  height: 170px;
+width: 327px;
+border-radius: 8px;
+margin-top: 10px;
+padding: 15px 38px 15px 16px;
+}
+#btn {
+  width: 140px;
+height: 48px;
+margin: 20px 0 45px;
+}
+
