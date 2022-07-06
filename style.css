@@ -6,13 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f7f7f9;
-}
-
-.head {
-  background: #fff;
-  border-radius: 0 0 0 80px;
-}
+x}
 
 .heading {
   display: flex;
@@ -52,7 +46,7 @@ body {
   align-items: flex-start;
   padding-right: 6.4%;
   padding-left: 6.4%;
-  background-image: url("Images/header-shapes-mobile.png");
+  background-image: url("Images/header-shapes\ mobile@2x.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
@@ -124,6 +118,7 @@ section {
 
 .works {
   margin-bottom: 88px;
+  background-color: #e5e5e5;
 }
 
 .single-card {
@@ -249,6 +244,10 @@ section {
   border-radius: 8px;
 }
 
+.float-items {
+  float: left;
+}
+
 .action {
   display: flex;
   flex-direction: row;
@@ -296,9 +295,7 @@ button:active {
   align-items: center;
   padding: 114px 24px;
   margin-bottom: 24px;
-  width: calc(100%);
-  background-color: #fff;
-  border-radius: 0 80px 0 0;
+  width: 375px;
 }
 
 .top {
