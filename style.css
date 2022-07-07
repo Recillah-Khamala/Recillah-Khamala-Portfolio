@@ -715,5 +715,20 @@ button:active {
   .left-block {
 
   }
+  /* Animations */
+
+ .first {
+    animation: slide 5s linear;
+    position: relative;
+  }
+
+  @keyframes slide {
+    from {
+      background-color: greenyellow;
+    }
+    to{
+      background-color: #c1c7d0;
+    }
+  }
 
 }
