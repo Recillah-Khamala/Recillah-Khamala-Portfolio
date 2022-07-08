@@ -18,6 +18,7 @@ body {
   border-radius: 0 0 0 80px;
   padding-left: 0;
   padding-right: 0;
+  width: 100%;
 }
 
 .heading {
@@ -90,7 +91,7 @@ body {
   align-items: flex-start;
   padding: 0;
   gap: 2px;
-  width: 117px;
+  /* width: 117px; */
   height: 24px;
   color: #7f8cff;
   font-family: "Poppins", sans-serif;
@@ -105,8 +106,7 @@ body {
 .social-media {
   list-style: none;
   display: flex;
-  margin-left: -40px;
-  justify-content: flex-start;
+  margin-left: -51px;
   margin-top: 10px;
 }
 
@@ -140,11 +140,36 @@ li {
   border-radius: 16px;
 }
 
-.card-works {
+.card-works1 {
   margin-bottom: 12px;
+  background-image: url(Images/Snapshoot-Portfolio-1.png);
+  border-radius: 8px;
+  width: 295px;
+  height: 220px;
+  margin-top: 12px;
 }
 
-.cards-pic {
+.card-works2 {
+  margin-bottom: 12px;
+  background-image: url(Images/Snapshoot-Portfolio-2.png);
+  border-radius: 8px;
+  width: 295px;
+  height: 220px;
+  margin-top: 12px;
+}
+
+.card-works3 {
+  margin-bottom: 12px;
+  background-image: url(Images/Snapshoot-Portfolio-3.png);
+  border-radius: 8px;
+  width: 295px;
+  height: 220px;
+  margin-top: 12px;
+}
+
+.card-works4 {
+  margin-bottom: 12px;
+  background-image: url(Images/Snapshoot-Portfolio-4.png);
   border-radius: 8px;
   width: 295px;
   height: 220px;
@@ -335,8 +360,7 @@ button:active {
   line-height: 24px;
   color: #344563;
   width: 100%;
-  height: 144px;
-  margin-bottom: 16px;
+  margin-top: 12px;
 }
 
 .social-media-1 {
@@ -355,7 +379,6 @@ button:active {
   align-items: center;
   padding: 0;
   margin-bottom: 8px;
-  width: 117px;
   height: 24px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
@@ -364,13 +387,14 @@ button:active {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin-top: 12px;
 }
 
 .frame-1 {
   list-style: none;
   display: flex;
-  margin-left: -40px;
-  justify-content: flex-start;
+  margin-left: -51px;
+  /* justify-content: flex-start; */
   margin-top: 10px;
 }
 
@@ -378,9 +402,10 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
+  margin-left: -33px;
+  min-width: 303px;
   padding: 0;
-  width: 327px;
-  height: 464.15px;
 }
 
 .frame-12 {
@@ -389,15 +414,17 @@ button:active {
   align-items: center;
   padding: 0;
   width: 87.2%;
-  height: 320.15px;
+  /* height: 320.15px; */
 }
 
 .frame-7 {
   width: 327px;
-  height: 72px;
-  justify-content: space-between;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .arrow-down {
@@ -495,7 +522,8 @@ button:active {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
+  font-size: 28px;
+  line-height: 28px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -519,8 +547,13 @@ button:active {
 }
 
 .contact-form {
-  width: 100%;
-  margin-bottom: 45px;
+  width: calc(50.74%);
+  gap: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 21.97%;
+  
 }
 
 .input-control input {
@@ -545,7 +578,7 @@ button:active {
   float: left;
 }
 
-.footer-line {
+/* .footer-line {
   width: 135px;
   height: 5px;
   bottom: 8px;
@@ -554,6 +587,10 @@ button:active {
   margin-left: 32%;
   margin-right: 32%;
   margin-bottom: 24px;
+} */
+
+.desktop-menu {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -567,8 +604,7 @@ button:active {
     background: #fff;
   }
 
-
-  .menu {
+  .desktop-menu {
     display: none;
   }
 
@@ -620,7 +656,7 @@ button:active {
   .main {
     width: 100%;
     padding: 0 9.86%;
-    background-image: url("Images/header-shapes-mobile.png");
+    background-image: url("Images/dt-header-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -630,13 +666,14 @@ button:active {
   .text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
+    align-items: center;
     gap: 12px;
-    width: 63.89%;
+    width: 100%;
     height: 29.26%;
-    margin-left: 18.05%;
-    margin-right: 18.05%;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 24.46%;
+    background-color: #f7f7f9;
   }
 
   .first {
@@ -660,11 +697,12 @@ button:active {
     font-size: 20px;
     line-height: 28px;
     font-style: normal;
+    margin-top: 12px;
+    color: #344563;
   }
 
   .title {
-    width: 8.3%;
-    height: 2.62%;
+    height: 24px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -675,45 +713,125 @@ button:active {
     flex-direction: row;
   }
 
-  .social-media {
-    width: 11.82%;
-    height: 1.82%;
-    margin-left: 12.5%;
-    margin-bottom: 28.06%;
-  }
-
   .works {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 9.86%;
     gap: 9.86%;
     width: 100%;
-    margin: 0;
+    margin-top: 88px;
   }
 
   .single-card {
     width: 80.28%;
-    height: 496px;
     background: #fff;
     border-radius: 8px;
     border: 2px solid #a7aeff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
   }
 
   .card-works {
-    width: 37.78%;
-    height: 448px;
-    margin-left: 24px;
-    margin-right: 24px;
+    width: 100%;
     border-radius: 8px;
-    background: url(Images/Snapshoot-Portfolio-1.png);
   }
 
-  .left-block {
+  .cards-pic {
+    width: 100%;
+    height: 100%;
+  }
 
+  .reverse {
+    order: -1;
+  }
+
+  .about-myself{
+    display: grid;
+    max-width: 100%;
+    column-gap: 3%;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 9.86%;
+    padding-right: 9.86%;
+  }
+
+  .primary-text-1 {
+    width: 100px;
+  }
+  .skill-list {
+    width: 684px;
+    /* height: 360px; */
+  }
+
+  .frames {
+    width: 100%;
+  }
+
+  .frame-12 {
+    width: 100%;
+    height: calc(60%);
+  }
+
+  .frame-7 {
+    width: calc(100%);
+    height: 72px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: -10px;
+  }
+
+  .language-list {
+    height: calc(66.67%);
+    display: grid;
+    grid-template-columns: repeat(3, 122px);
+    grid-template-rows: 120px;
+    padding: 12px;
+    gap: 12px;
+    margin-left: -136px;
+  }
+
+  .content {
+    width: 122px;
+    height: 120px;
+    border-radius: 8px;
+    background: #f7f7f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    border-radius: 8px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-me {
+    background-image: url(Images/dt-background-shapes.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    /* margin: 79.09px 74px 48px 75px; */
+  }
+
+  /* .bi {
+    background-repeat: no-repeat;
+    margin: 79.09px 74px 48.21px 75.34px;
+    background-size: contain;
+  } */
+
+  .container {
+    width: 61%;
+    margin: 0 22% 9% 22%;
+  }
+
+  .input-control {
+    width: 100%;
+    border-radius: 0;
   }
 
 }
