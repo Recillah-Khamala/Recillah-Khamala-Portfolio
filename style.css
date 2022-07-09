@@ -7,13 +7,16 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-family: "Poppins", sans-serif;
-  background: #e7e7e9;
 }
 
 .head {
   display: flex;
   flex-direction: column;
+  background: #e7e7e9;
 }
 
 .heading {
@@ -72,25 +75,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  padding: 135px 18px;
+
+  /* padding: 135px 18px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 0 0 0 80px;
-  margin-bottom: 88px;
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
+
+  /* padding-left: 24px;
+  padding-right: 24px; */
 }
 
 .first {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 42px;
+  line-height: 40px;
   display: flex;
-  align-items: center;
   letter-spacing: 0.37px;
   color: #091e42;
   padding: 10px;
@@ -123,7 +125,7 @@ body {
   text-align: left;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 24px;
+  font-size: 15px;
 }
 
 .headingicons ul {
@@ -294,10 +296,8 @@ button:hover {
 .text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 120px 20px;
 }
 
 .skill-list {
@@ -314,7 +314,6 @@ hr {
 
 .content {
   display: flex;
-  flex-direction: row;
   color: #253858;
   background-color: #f7f7f9;
   border-radius: 5px;
@@ -323,6 +322,8 @@ hr {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  padding: 15px;
+  margin: 15px 0;
 }
 
 .content li {
@@ -330,8 +331,7 @@ hr {
 }
 
 .content span {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding: 14px;
 }
 
 .content ul {
@@ -349,6 +349,7 @@ hr {
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
+  padding: 30px 10px;
 }
 
 .frames li {
@@ -480,7 +481,11 @@ input[type="submit"]:hover {
 
 @media (min-width: 768px) {
   .heading {
-    padding: 0 9.86%;
+    padding: 0 20px;
+  }
+
+  .head {
+    background-color: #f7f7f9;
   }
 
   .heading .menu-icon {
@@ -490,7 +495,6 @@ input[type="submit"]:hover {
   .dmenu {
     display: flex;
     flex-direction: row;
-    color: #344563;
     line-height: 30px;
   }
 
@@ -504,6 +508,7 @@ input[type="submit"]:hover {
     font-weight: 500;
     font-size: 20px;
     text-align: center;
+    color: #344563;
   }
 
   .dmenu li a {
@@ -515,13 +520,12 @@ input[type="submit"]:hover {
     flex-direction: column;
     background: url(Images/dt-header-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right bottom;
+    background-size: 100% 100%;
     font-size: 48px;
     background-color: #fff;
-    padding: 180px 0;
     font-weight: 700;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
   }
 
   .works {
@@ -596,21 +600,14 @@ input[type="submit"]:hover {
   .text {
     display: flex;
     flex-direction: column;
-    padding: 150px 120px;
-  }
-
-  input[type="submit"] {
-    float: none;
+    width: 60%;
   }
 
   .about {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .description {
-    width: 447px;
+    width: 70%;
   }
 
   .abtext {
@@ -647,10 +644,6 @@ input[type="submit"]:hover {
     width: fit-content;
   }
 
-  .frames {
-    margin-bottom: 30px;
-  }
-
   .background-image {
     background: url(Images/contact-backgound-image.svg);
     background-repeat: no-repeat;
@@ -669,10 +662,12 @@ input[type="submit"]:hover {
     padding: 120px 0;
     width: 40%;
   }
-}
 
-@media (max-width: 1300px) {
-  .contact-backgrounds {
-    background-size: contain;
+  .contact-form {
+    align-items: center;
+  }
+
+  input[type="submit"] {
+    display: flex;
   }
 }
