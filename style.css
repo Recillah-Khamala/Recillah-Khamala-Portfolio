@@ -79,7 +79,7 @@ body {
   border-radius: 0 0 0 80px;
   margin-bottom: 88px;
   width: 100%;
-  padding: 0 24px;
+ padding: 0 24px;
 }
 
 .first {
@@ -91,12 +91,12 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.37px;
-  color: #091E42;
+  color: #091e42;
   padding: 10px;
 }
 
 .description {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -133,7 +133,7 @@ body {
 }
 
 .headingicons li {
-  padding: 0 15px 0 0; 
+  padding: 0 15px 0 0;
 }
 
 .headingicons img {
@@ -159,7 +159,7 @@ body {
   padding-bottom: 114px;
   gap: 88px;
   background: #f7f7f9;
-  border: ;
+  border: 0 24px;
 }
 
 .dtcards-pic {
@@ -241,7 +241,7 @@ body {
   color: #6070ff;
 }
 
-tags li a {
+.tags li a {
   text-decoration: none;
 }
 
@@ -307,7 +307,7 @@ button:hover {
   line-height: 24px;
 }
 
-hr{
+hr {
   border: 1px solid #e3e5e9;
 }
 
@@ -341,14 +341,13 @@ hr{
 
 .icon {
   widows: 48px;
-
 }
 
 .frames {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .frames li {
@@ -370,7 +369,7 @@ hr{
 }
 
 .heading-2 {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -382,7 +381,7 @@ hr{
 }
 
 .wordings {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -540,7 +539,7 @@ input[type="submit"]:hover {
     display: none;
   }
 
-  .dtcards-pic{
+  .dtcards-pic {
     display: flex;
     width: 50%;
     height: auto;
@@ -601,7 +600,6 @@ input[type="submit"]:hover {
   }
 
   .text {
-    /* padding: 200px 20px 50px 20px; */
     display: flex;
     flex-direction: column;
   }
@@ -665,7 +663,7 @@ input[type="submit"]:hover {
     background-size: cover;
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
   }
 
   .container {
@@ -674,7 +672,7 @@ input[type="submit"]:hover {
     gap: 20px;
     align-items: center;
     padding: 120px 0;
-    width: 40%;   
+    width: 40%;
   }
 
 }
@@ -683,5 +681,4 @@ input[type="submit"]:hover {
   .contact-backgrounds {
     background-size: contain;
   }
-
 }
