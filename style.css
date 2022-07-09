@@ -79,7 +79,8 @@ body {
   border-radius: 0 0 0 80px;
   margin-bottom: 88px;
   width: 100%;
-  padding: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .first {
@@ -559,12 +560,6 @@ input[type="submit"]:hover {
     flex-direction: row-reverse;
   }
 
-  .text {
-    display: flex;
-    flex-direction: column;
-    padding: 150px 120px;
-  }
-
   .skill-list {
     display: flex;
     flex-direction: column;
@@ -588,7 +583,7 @@ input[type="submit"]:hover {
     align-items: center;
   }
 
-  .imageb{
+  .imageb {
     background: url(Images/dt-header-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -599,8 +594,10 @@ input[type="submit"]:hover {
   }
 
   .text {
+    flex-direction: column;
     display: flex;
     flex-direction: column;
+    padding: 150px 120px;
   }
 
   input[type="submit"] {
