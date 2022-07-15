@@ -11,7 +11,7 @@ Portfolio: setup and mobile version skeleton
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://htmlpreview.github.io/?https://github.com/Rn486/Recillah-Khamala-Portfolio/blob/feature/index.html)
+[Live Demo Link](https://rn486.github.io/)
 
 
 ## Getting Started
