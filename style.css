@@ -75,10 +75,11 @@ body {
 }
 
 .mmenu1 {
-  list-style-type: none;
+  list-style: none;
   margin-right: 20%;
   margin-bottom: 40px;
   margin-top: 13%;
+  text-decoration: none;
 }
 
 .mobile {
