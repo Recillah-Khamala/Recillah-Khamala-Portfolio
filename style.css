@@ -30,7 +30,7 @@ body {
 .menu {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   display: flex;
   flex-direction: row;
@@ -75,20 +75,20 @@ body {
 }
 
 .mmenu1 {
-  list-style: none;
   margin-right: 20%;
   margin-bottom: 40px;
   margin-top: 13%;
-  text-decoration: none;
 }
 
 .mobile {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 44px;
+  text-decoration: none;
+  margin-left: 28px;
 }
 
 .mobile:hover {
@@ -142,7 +142,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #fff;
-   display: flex;
+  display: flex;
   justify-content: center;
   border-radius: 0 0 0 80px;
 }
@@ -167,7 +167,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #344563;
-  border: 1;
+  border: 1px;
   text-align: left;
   padding: 10px;
 }
@@ -224,7 +224,8 @@ body {
   padding-bottom: 114px;
   gap: 88px;
   background: #f7f7f9;
-  border: 0 24px;
+  border-left: 24px;
+  border-right: 24px;
 }
 
 .dtcards-pic {
@@ -403,7 +404,7 @@ hr {
 }
 
 .icon {
-  widows: 48px;
+  widows: 48;
 }
 
 .frames {
@@ -415,7 +416,7 @@ hr {
 }
 
 .frames li {
-  padding: 24 0;
+  padding: 24px 0;
 }
 
 .contact-me {
