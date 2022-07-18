@@ -15,6 +15,14 @@
 <body>
     <section class="head">
         <header class="heading">
+            <nav class="amenu">
+                <span class="xicon"><img src="Images/Xicon.svg" alt="Xicon"></span>
+                <ul class="mmenu">
+                    <li class="mmenu1"><a class="mobile" href="#portfolio">Portfolio</a></li>
+                    <li class="mmenu1"><a class="mobile" href="#about">About</a></li>
+                    <li class="mmenu1"><a class="mobile" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <a class="logo" href="#">My Logo</a>
             <nav class="menu">
                 <span class="menu-icon"><img src="Images/Icon-Menu.png" alt="Menu"></span>
@@ -28,7 +36,7 @@
         <section class="main">
             <div class="text">
                 <div class="main-text">
-                    <h1 class="first">I'm Recillah <br> Glad To See You!</h1>
+                    <h2 class="first">I'm Recillah <br> Glad To See You!</h2>
                     <p class="description">I'm a software developer! I can help you build a product , feature or
                         website. Look through some of my work and experience! If you like what you see and have a
                         project you need coded, don't hestiate to contact me.</p>
@@ -67,7 +75,7 @@
         </section>
 
         <!-- Middle section -->
-        <section class="works">
+        <section class="works" id="portfolio">
             <div class="single-card card1">
                 <img class="dtcards-pic" src="Images/Snapshoot-portfolio-dt1.png" alt="Snapshoot Portfolio 1">
                 <img class="mbcards-pic" src="Images/Snapshoot-Portfolio-dt3.png" alt="image">
@@ -102,7 +110,7 @@
                 <img class="mbcards-pic" src="Images/Snapshoot-Portfolio-dt4.png" alt="image">
                 <div class="left-block">
                     <h2 class="project-title">Tonic</h2>
-                    <section class="frame-2">
+                    <div class="frame-2">
                         <ul>
                             <li><a class="client"> CANOPY</a></li>
                             <li><span><img class="counter" src="Images/Counter.png" alt="dot\fulstop"></span></li>
@@ -112,7 +120,7 @@
                             <li><span><img class="counter" src="Images/Counter.png" alt="dot\fullstop"></span></li>
                             <li class="year-label">2015</li>
                         </ul>
-                    </section>
+                    </div>
                     <p>
                         A daily selection of privately personalized reads; no accounts or sign-ups required.
                     </p>
@@ -187,14 +195,14 @@
                 </div>
             </div>
         </section>
-        <section class="about-myself">
+        <section class="about-myself" id="about">
             <div class=" abtext text">
                 <div class="about">
                     <div class="main-text">
-                        <h1 class="first">
+                        <h2 class="first">
                             About <br />
                             Myself
-                        </h1>
+                        </h2>
                         <p class="description">I’m a software developer! I can help you build a product , feature or
                             website. Look through some of my work and experience! If you like what you see and have a
                             project you need coded, don’t hestiate to contact me.</p>
@@ -266,7 +274,7 @@
             </div>
         </section>
         <!-- contact form -->
-        <section class="contact-me">
+        <section class="contact-me" id="contact">
             <div class="background-image">
                 <div class="container">
                     <div class="scontainer">
@@ -296,6 +304,7 @@
             </div>
         </section>
     </section>
+    <script src="menu.js"></script>
 </body>
 
 </html>

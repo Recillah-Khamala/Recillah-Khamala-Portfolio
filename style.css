@@ -30,7 +30,7 @@ body {
 .menu {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   display: flex;
   flex-direction: row;
@@ -42,11 +42,82 @@ body {
   text-align: center;
 }
 
+.amenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(4px);
+  height: 100vh;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growDown {
+  0% {
+    transform: rotateX(-90deg);
+  }
+
+  70% {
+    transform: rotateX(20deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.mmenu {
+  margin-right: 20%;
+  margin-bottom: 40px;
+  margin-top: 13%;
+}
+
+.mmenu1 {
+  margin-top: 8px;
+}
+
+.mobile {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  margin-left: 28px;
+}
+
+.mobile:hover {
+  color: #6070ff;
+  background-color: #fff;
+  font-size: 34px;
+}
+
 .menu-icon {
   margin: 0;
 }
 
+.xicon {
+  display: flex;
+  align-self: flex-end;
+  margin-left: 86%;
+  margin-top: 7.5%;
+}
+
 .menu-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.xicon img {
   width: 24px;
   height: 24px;
 }
@@ -73,18 +144,11 @@ body {
 .main {
   background-image: url(Images/dt-header-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-color: #fff;
-
-  /* padding: 135px 18px; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   border-radius: 0 0 0 80px;
-  width: 100%;
-
-  /* padding-left: 24px;
-  padding-right: 24px; */
 }
 
 .first {
@@ -107,7 +171,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #344563;
-  border: 1;
+  border: 1px;
   text-align: left;
   padding: 10px;
 }
@@ -164,7 +228,8 @@ body {
   padding-bottom: 114px;
   gap: 88px;
   background: #f7f7f9;
-  border: 0 24px;
+  border-left: 24px;
+  border-right: 24px;
 }
 
 .dtcards-pic {
@@ -343,7 +408,7 @@ hr {
 }
 
 .icon {
-  widows: 48px;
+  widows: 48;
 }
 
 .frames {
@@ -355,7 +420,7 @@ hr {
 }
 
 .frames li {
-  padding: 24 0;
+  padding: 24px 0;
 }
 
 .contact-me {
