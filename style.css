@@ -74,10 +74,14 @@ body {
   display: block;
 }
 
-.mmenu1 {
+.mmenu {
   margin-right: 20%;
   margin-bottom: 40px;
   margin-top: 13%;
+}
+
+.mmenu1 {
+  margin-top: 8px;
 }
 
 .mobile {
