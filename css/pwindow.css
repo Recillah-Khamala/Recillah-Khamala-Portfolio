@@ -16,6 +16,10 @@
   font-family: 'poppins', sans-serif;
 }
 
+.show {
+  display: block;
+}
+
 .btn {
   display: contents;
   width: 306px;
@@ -131,15 +135,19 @@ p {
   color: #344563;
 }
 
+.overlay {
+  display: none;
+}
+
+
 #overlay {
   position: fixed;
-  display: none;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgba(193, 199, 208, 0.678);
-  filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 1;
 }
 
@@ -152,6 +160,10 @@ p {
   display: none;
 }
 
+p {
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .modal {
     margin: 0 auto;
@@ -161,6 +173,10 @@ p {
     transform: translate(-50%, -70%);
     font-size: 0.625rem;
     height: 80vh;
+  }
+
+  .show {
+    display: block;
   }
 
   .tag1 {
