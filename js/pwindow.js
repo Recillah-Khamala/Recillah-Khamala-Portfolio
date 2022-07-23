@@ -1,70 +1,69 @@
 const tdetail = [
-    {
-      name: 'Tonic',
-      img: 'Images/Snapshoot-Portfolio-dt1.png',
-      img2: 'Images/Snapshoot-Portfolio-dt3.png',
-      description:
+  {
+    name: 'Tonic',
+    img: 'Images/Snapshoot-Portfolio-dt1.png',
+    img2: 'Images/Snapshoot-Portfolio-dt3.png',
+    description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      technologies: ['html', 'css', 'javascript'],
-      liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
-      source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
-    },
-  
-    {
-      name: 'Multi-Post Stories',
-      img: 'Images/Snapshoot-Portfolio-dt2.png',
-      img2: 'Images/Snapshoot-Portfolio-dt4.png',
-      description:
+    technologies: ['html', 'css', 'javascript'],
+    liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
+    source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
+  },
+
+  {
+    name: 'Multi-Post Stories',
+    img: 'Images/Snapshoot-Portfolio-dt2.png',
+    img2: 'Images/Snapshoot-Portfolio-dt4.png',
+    description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      technologies: ['html', 'css', 'javascript'],
-      liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
-      source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
-    },
-  
-    {
-      name: 'Tonic',
-      img: 'Images/Snapshoot-Portfolio-dt3.png',
-      img2: 'Images/Snapshoot-Portfolio-3.png',
-      description:
+    technologies: ['html', 'css', 'javascript'],
+    liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
+    source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
+  },
+
+  {
+    name: 'Tonic',
+    img: 'Images/Snapshoot-Portfolio-dt3.png',
+    img2: 'Images/Snapshoot-Portfolio-3.png',
+    description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      technologies: ['html', 'css', 'javascript'],
-      liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
-      source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
-    },
-  
-    {
-      name: 'Multi-Post Stories',
-      img: 'Images/Snapshoot-Portfolio-dt4.png',
-      img2: 'Images/Snapshoot-Portfolio-dt2.png',
-      description:
+    technologies: ['html', 'css', 'javascript'],
+    liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
+    source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
+  },
+
+  {
+    name: 'Multi-Post Stories',
+    img: 'Images/Snapshoot-Portfolio-dt4.png',
+    img2: 'Images/Snapshoot-Portfolio-dt2.png',
+    description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      technologies: ['html', 'css', 'javascript'],
-      liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
-      source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
-    },
-  ];
+    technologies: ['html', 'css', 'javascript'],
+    liveVersion: 'https://rn486.github.io/Recillah-Khamala-Portfolio/',
+    source: 'https://github.com/Rn486/Recillah-Khamala-Portfolio',
+  },
+];
 
-  tdetail.forEach((element, i) => {  
-    const showTdetailsBtn = document.querySelectorAll('.showBtn');
+tdetail.forEach((element, i) => {
+  const showTdetailsBtn = document.querySelectorAll('.showBtn');
 
-    showTdetailsBtn.forEach((n) => {
-      n.addEventListener('click', (e) => {
-        const targetId =e.targetId
-        const tdetail = tdetail[targetId]
-      })
-    })
+  showTdetailsBtn.forEach((n) => {
+    n.addEventListener('click', (e) => {
+      const { targetId } = e;
+      const tdetail = tdetail[targetId];
+    });
+  });
 
-    tdetail[i].technologies.forEach((tech, j) => {
-      const tag = document.createElement('li');
-      URL.append(tag);
-      tag.classList.add(tech);
-      tag.innerText = tdetail[i].technologies[j]
-    })
+  tdetail[i].technologies.forEach((tech, j) => {
+    const tag = document.createElement('li');
+    URL.append(tag);
+    tag.classList.add(tech);
+    tag.innerText = tdetail[i].technologies[j];
+  });
 
-    
-    const bigContainer = document.querySelector('.works'); 
-    const oneCard = document.createElement('div')
-    oneCard.innerHTML = `<img class="dtcards-pic" src="${element.img}" alt="Snapshoot Portfolio 1">
+  const bigContainer = document.querySelector('.works');
+  const oneCard = document.createElement('div');
+  oneCard.innerHTML = `<img class="dtcards-pic" src="${element.img}" alt="Snapshoot Portfolio 1">
     <img class="mbcards-pic" src="${element.img2}" alt="image">
     <div class="left-block">
       <h2 class="project-title">${element.name}</h2>
@@ -90,26 +89,23 @@ const tdetail = [
       <div class="abutton">
         <button type="button" id="${i}">See Project</button>
       </div>
-    </div>`
-    oneCard.classList.add('single-card')
-    oneCard.classList.add('card1')
-    bigContainer.appendChild(oneCard)
-    const button = document.createElement('button')
+    </div>`;
+  oneCard.classList.add('single-card');
+  oneCard.classList.add('card1');
+  bigContainer.appendChild(oneCard);
+  const button = document.createElement('button');
 
-    button.classList.add('showBtn')
-    button.setAttribute('id', i);
-    button.innerText = 'See Project'
-    
-  });
+  button.classList.add('showBtn');
+  button.setAttribute('id', i);
+  button.innerText = 'See Project';
+});
 
-  tdetail[i].technologies.forEach((tech, j) => {
-    const tag = document.createElement('li');
-    URL.append(tag);
-    tag.classList.add(tech);
-    tag.innerText = tdetail[i].technologies[j]
-  })
-  
-  
+tdetail[i].technologies.forEach((tech, j) => {
+  const tag = document.createElement('li');
+  URL.append(tag);
+  tag.classList.add(tech);
+  tag.innerText = tdetail[i].technologies[j];
+});
 
 // projects.forEach((element, i) => {
 //   const works = document.querySelector('.works');
@@ -229,7 +225,7 @@ const tdetail = [
 //             class="cards-pic"
 //           />
 //           </div>
-          
+
 //           <div class = "flex-desktop">
 //         <p>
 //           ${project.description}
@@ -237,9 +233,9 @@ const tdetail = [
 //         <div>
 //          <ul class="languages">
 //            <li class="${project.technologies[0]}">html</li>
-          
+
 //           <li class="${project.technologies[1]}">css</li>
-          
+
 //           <li class="${project.technologies[2]}">javascript</li>
 //          </ul>
 //          <div class = "btn-flex">
