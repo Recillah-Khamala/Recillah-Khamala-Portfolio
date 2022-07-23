@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio: setup and mobile version skeleton</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pwindow.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
@@ -27,9 +28,9 @@
             <nav class="menu">
                 <span class="menu-icon"><img src="Images/Icon-Menu.png" alt="Menu"></span>
                 <ul class="dmenu">
-                    <li><a class="dt" href="#">Portfolio</a></li>
-                    <li><a class="dt" href="#">About</a></li>
-                    <li><a class="dt" href="#">Contact</a></li>
+                    <li><a class="dt" href="#portfolio">Portfolio</a></li>
+                    <li><a class="dt" href="#about">About</a></li>
+                    <li><a class="dt" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -76,7 +77,57 @@
 
         <!-- Middle section -->
         <section class="works" id="portfolio">
-            <!-- <div class="single-card card1 ">
+
+            <div class="modal" id="modal">
+                <div class="model-container">
+                    <div class="model-headline">
+                        <h2 class="tonic">Tonic</h2>
+                        <button data-close-button class="close-button" type="button">&times;</button>
+                    </div>
+                    <div class="frame-2">
+                        <ul>
+                          <li class="canopy-model"> CANOPY</li>
+                          <li><a href="#"><img class="counter" src="Images/Counter.png" alt="dot\fulstop"></a></li>
+                          <li class="role">Back End Dev</li>
+                          <li><a href="#"><img class="counter" src="Images/Counter.png" alt="dot\fullstop"></a></li>
+                          <li class="year-model">2015</li>
+                        </ul>
+                    </div>
+                    <div class="image-overflow">
+                        <img class="work-banner-model" src="#" alt="Snapshoot Portfolio 1">
+                        <img class="mobile-banner-model" src="#" alt="image">
+                    </div>
+                    <div class="parlist">
+                        <p class="descriptionist">nnlmknbhvaUHNDklnon</p>
+                        <div class="lister">
+                            <ul class="button-list">
+                              <li class="tag">Html</li>
+                              <li class="tag">Css</li>
+                              <li class="tag">javascript</li>
+                            </ul>
+                            <ul class="button-list tag1">
+                              <li class="tag">Github</li>
+                              <li class="tag">Ruby</li>
+                              <li class="tag">Bootstrap</li>
+                            </ul>
+                            <div class = "btn">
+                                <button class="dogWater" type="button">See Live <span><img
+                                src="/Images/power-Icon.svg"
+                                class="size dot"
+                                alt="#"
+                              /></span></button>
+                                <button class="catWater" type="button">See Source <span><img
+                                src="/Images/Github-icon.svg"
+                                class="size dot"
+                                alt="#"
+                              /></span></button>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+
+            <div class="single-card card1 ">
                 <img class="dtcards-pic" src="Images/Snapshoot-portfolio-dt1.png" alt="Snapshoot Portfolio 1">
                 <img class="mbcards-pic" src="Images/Snapshoot-Portfolio-dt3.png" alt="image">
                 <div class="left-block">
@@ -101,7 +152,7 @@
                         </ul>
                     </div>
                     <div class="abutton">
-                        <button type="button">See Project</button>
+                        <button data-works="0" type="button" class="seeProject">See Project</button>
                     </div>
                 </div>
             </div>
@@ -132,7 +183,7 @@
                         </ul>
                     </div>
                     <div class="abutton">
-                        <button type="button">See Project</button>
+                        <button data-works="1" type="button" class="seeProject">See Project</button>
                     </div>
                 </div>
             </div>
@@ -161,7 +212,7 @@
                         </ul>
                     </div>
                     <div class="abutton">
-                        <button type="button">See Project</button>
+                        <button data-works="2" type="button" class="seeProject">See Project</button>
                     </div>
                 </div>
             </div>
@@ -190,10 +241,10 @@
                         </ul>
                     </div>
                     <div class="abutton">
-                        <button type="button">See Project</button>
+                        <button data-works="3" type="button" class="seeProject">See Project</button>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </section>
         <section class="about-myself" id="about">
             <div class=" abtext text">
@@ -272,6 +323,7 @@
                     <hr>
                 </div>
             </div>
+            <div class="active" id="overlay"></div>
         </section>
         <!-- contact form -->
         <section class="contact-me" id="contact">
@@ -285,7 +337,7 @@
                             with it
                         </p>
                     </div>
-                    <form action="https://formspree.io/f/mgedjkyb" id="form1" method="post" class="contact-form">
+                    <form noValidate action="https://formspree.io/f/mgedjkyb" id="form1" method="post" class="contact-form">
                         <div class="input-control">
                             <input type="text" id="name" placeholder="Your Name" name="name" required />
                         </div>
@@ -296,16 +348,19 @@
                             <textarea placeholder="Write your message here" id="message" name="message" maxlength="500"
                                 required></textarea>
                         </div>
-                        <div class="input-control">
-                            <input type="submit" value="Get It Touch" />
+                        <div class="flex">
+                            <input id="cBtn" class="submit" type="submit" value="Get It Touch" />
+                            <div class="error"></div>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </section>
-    <script src="menu.js"></script>
-    <script src="pwindow.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="js/pwindow.js"></script>
+    <script src="./js/vcform.js"></script>
+    <script src="./js/lStorage.js"></script>
 </body>
 
 </html>
