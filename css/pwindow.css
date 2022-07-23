@@ -133,12 +133,12 @@ p {
   font-size: 16px;
   line-height: 30px;
   color: #344563;
+  overflow: hidden;
 }
 
 .overlay {
   display: none;
 }
-
 
 #overlay {
   position: fixed;
@@ -158,10 +158,6 @@ p {
 
 .tag1 {
   display: none;
-}
-
-p {
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
