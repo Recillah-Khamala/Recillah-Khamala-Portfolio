@@ -775,11 +775,11 @@ input[type="submit"]:hover {
 }
 
 .flex {
-display: flex;
+  display: flex;
 }
 
 .error {
   color: #ff3434;
   font-size: 16px;
-  margin: 0.5rem
+  margin: 0.5rem;
 }
