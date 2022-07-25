@@ -76,7 +76,7 @@
 
         <!-- Middle section -->
         <section class="works" id="portfolio">
-            <div class="single-card card1">
+            <!-- <div class="single-card card1 ">
                 <img class="dtcards-pic" src="Images/Snapshoot-portfolio-dt1.png" alt="Snapshoot Portfolio 1">
                 <img class="mbcards-pic" src="Images/Snapshoot-Portfolio-dt3.png" alt="image">
                 <div class="left-block">
@@ -109,7 +109,7 @@
                 <img class="dtcards-pic" src="Images/Snapshoot-Portfolio-dt2.png" alt="Snapshoot Portfolio 1">
                 <img class="mbcards-pic" src="Images/Snapshoot-Portfolio-dt4.png" alt="image">
                 <div class="left-block">
-                    <h2 class="project-title">Tonic</h2>
+                    <h2 class="project-title">Multi-Post Stories</h2>
                     <div class="frame-2">
                         <ul>
                             <li><a class="client"> CANOPY</a></li>
@@ -169,7 +169,7 @@
                 <img class="dtcards-pic" src="Images/Snapshoot-Portfolio-dt4.png" alt="Snapshoot Portfolio 1">
                 <img class="mbcards-pic" src="Images/Snapshoot-Portfolio-dt2.png" alt="image">
                 <div class="left-block">
-                    <h2 class="project-title">Tonic</h2>
+                    <h2 class="project-title">Multi-Post Stories</h2>
                     <div class="frame-2">
                         <ul>
                             <li class="client"> CANOPY</li>
@@ -193,7 +193,7 @@
                         <button type="button">See Project</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section class="about-myself" id="about">
             <div class=" abtext text">
@@ -285,7 +285,7 @@
                             with it
                         </p>
                     </div>
-                    <form action="https://formspree.io/f/mgedjkyb" id="form1" method="post" class="contact-form">
+                    <form noValidate action="https://formspree.io/f/mgedjkyb" id="form1" method="post" class="contact-form">
                         <div class="input-control">
                             <input type="text" id="name" placeholder="Your Name" name="name" required />
                         </div>
@@ -296,15 +296,18 @@
                             <textarea placeholder="Write your message here" id="message" name="message" maxlength="500"
                                 required></textarea>
                         </div>
-                        <div class="input-control">
-                            <input type="submit" value="Get It Touch" />
+                        <div class="flex">
+                            <input id="cBtn" class="submit" type="submit" value="Get It Touch" />
+                            <div class="error"></div>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </section>
-    <script src="menu.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/pwindow.js"></script>
+    <script src="/js/vcform.js"></script>
 </body>
 
 </html>
