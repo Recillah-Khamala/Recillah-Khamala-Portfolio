@@ -779,7 +779,9 @@ input[type="submit"]:hover {
 }
 
 .error {
+  display: block;
   color: #ff3434;
+  font-weight: 400;
   font-size: 16px;
   margin: 0.5rem;
 }
