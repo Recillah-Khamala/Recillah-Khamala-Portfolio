@@ -2,7 +2,7 @@
 
 # Project Name
 Portfolio: setup and mobile version skeleton
-> This webite showcases all the projects I have worked on so far as a software developer. 
+> This webite showcases my html and css skills learned so far. 
 
 
 ## Built With
