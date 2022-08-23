@@ -2,7 +2,7 @@
 
 # Project Name
 Portfolio: setup and mobile version skeleton
-> This webite showcases my html and css skills learned so far. 
+> For this project, I use CSS and HTML skills learned to build this website a duplicate of an already provided template.
 
 
 ## Built With
@@ -47,6 +47,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Much thanks to Microverse.
+- Grateful to figma for providing the template.
 
 ## 📝 License
 
