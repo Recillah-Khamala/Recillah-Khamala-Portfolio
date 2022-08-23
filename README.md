@@ -1,8 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
-Portfolio: setup and mobile version skeleton
-> For this project, I use CSS and HTML skills learned to build this website a duplicate of an already provided template.
+Portfolio: setup and mobile version skeleton - For this project, I use CSS and HTML skills learned to build this website a duplicate of an already provided template.
 
 
 ## Built With
